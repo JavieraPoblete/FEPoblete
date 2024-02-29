@@ -1,12 +1,35 @@
-function App() {
-  //Aqui deberias agregar los estados y los handlers para los inputs
+import { useState } from "react";
 
+const App = () => {
+  const [favoriteColor, setFavoriteColor] = useState([]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const color = event.target.elements.color.value;
+    setFavoriteColor(color);
+  }; 
+  
   return (
-    <div className="App">
-      <h1>Elige un color</h1>
-      <form>{/* aqui deberias escribir tu codigo */}</form>
-    </div>
-  );
+
+    <div>
+  <p>Indícanos cuál es tu color favorito: </p>
+
+    <form 
+    onSubmit={ ev => {
+      ev.preventDefault();
+      const color = ev.target.elements.color.value;
+      setFavoriteColor(color);
+    }}
+    >
+      imput color: <input type="text" name="color" />
+    
+      <button type="submit">Buscar</button>
+      </form>
+      <p> Tu color favorito es: {favoriteColor}  </p> 
+      </div>
+  
+  )
 }
 
 export default App;
+ 

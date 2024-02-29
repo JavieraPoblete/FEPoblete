@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: #080708;
-  background-color: #E6E8E6;
+  background-color: #E6E6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+p {
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -31,7 +31,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #080708;
+  background-color: #e707e7;
   cursor: pointer;
   transition: border-color 0.25s;
   height: 40px;
@@ -39,7 +39,4 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
